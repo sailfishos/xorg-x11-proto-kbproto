@@ -1,0 +1,17 @@
+Name: xorg-x11-proto-kbproto
+Summary: X.Org X11 Protocol kbproto
+Version: 1.0.5
+Release: 0
+Group: Development/System
+License: MIT
+URL: http://www.x.org
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/proto/kbproto-%{version}.tar.bz2
+
+Provides: kbproto
+Configure: reconfigure
+ConfigOptions:
+    - --libdir=%{_datadir}
+
+PkgConfigBR:
+    - xorg-macros
